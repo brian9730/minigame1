@@ -1,0 +1,93 @@
+h1{
+    background-color: #032e03;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    margin:0;
+    }
+.main_box{
+    width:700px;
+    height:700px;
+    overflow:hidden;
+    margin:auto;
+}
+.main{
+    position:absolute;
+    width:700px;
+    height:700px;
+    overflow:hidden;
+    left:570px;
+    top:100px;
+}
+/*결과 이미지 스타일*/
+.result{
+    position:absolute;
+    overflow:hidden;
+    left:570px;
+    top:100px;
+}
+/*램프 이미지 스타일*/
+.ramp{
+    position:absolute;
+    width:100px;
+    height:100px;
+    overflow:hidden;
+    left:607px; 
+    top:390px;
+}
+/* 시작, 다시시작 버튼 스타일 */
+.bt1 {
+    position:absolute;
+    margin:auto;
+    left:835px;
+    top:30px;
+}
+.bt2 {
+    position:absolute;
+    margin:auto;
+    left:900px;
+    top:30px;
+}
+/* 숨겨진 램프 스타일 */
+#ramp{
+    display:none;
+}
+
+#rramp{
+    display:none;
+}
+
+#bramp{
+    display:none;
+}
+/* 버튼 스타일 */
+input[type="button"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #032e03;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #1b550a;
+}
+
+/* 새로 추가된 부분: 버튼에 아이콘 추가 및 정렬 */
+input[type="button"]::before {
+    content: url('path/to/icon.png');
+    display: inline-block;
+    margin-right: 8px;
+    transition: transform 0.3s ease; /* 아이콘에 호버 효과 적용을 위한 트랜지션 설정 */
+}
+
+/* 새로 추가된 부분: 아이콘에 호버 효과 */
+input[type="button"]:hover::before {
+    transform: scale(1.2); /* 호버 시 아이콘 확대 효과 */
+}
+

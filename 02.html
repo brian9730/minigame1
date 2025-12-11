@@ -1,0 +1,51 @@
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>게임시작!</title>
+        <link rel="stylesheet" href="css/01.css"> 
+    </head>
+    </head>
+    <body>
+        <!--게임 시작 버튼-->
+        <input type="button" id="start" class ="bt1" value="시작" onclick="Start()">
+        <!--게임 다시 시작 버튼-->
+        <input type="button" id="restart" class ="bt2" value="다시시작" onclick="Restart()">
+
+        <!--메인 배경 이미지-->
+        <img id="main" src="img/main_img.png" class = "main">
+
+        <!--플레이어 카드들-->
+        <img id="card1" onclick="putm1()" src="" style="position:absolute; left:607px; top:682px; ">
+        <img id="card2" onclick="putm2()" src="" style="position:absolute; left:745px; top:682px; ">
+        <img id="card3" onclick="putm3()" src="" style="position:absolute; left:882px; top:682px; ">
+        <img id="card4" onclick="putm4()" src="" style="position:absolute; left:1020px; top:682px; ">
+        <img id="card5" onclick="putm5()" src="" style="position:absolute; left:1158px; top:682px; ">
+
+        <!--컴퓨터(상대)카드들-->
+        <img id="ycard1" src="" style="position:absolute; left:607px; top:120px; ">
+        <img id="ycard2" src="" style="position:absolute; left:745px; top:120px; ">
+        <img id="ycard3" src="" style="position:absolute; left:882px; top:120px; ">
+        <img id="ycard4" src="" style="position:absolute; left:1020px; top:120px; ">
+        <img id="ycard5" src="" style="position:absolute; left:1158px; top:120px; ">
+
+        <!--게임 결과에 대한 그래픽-->
+        <img id="rramp" src="" class = "ramp" style="position:absolute; left:590px; top:560px; ">
+        <img id="ramp" src="" class = "ramp" style="position:absolute; left:590px; top:390px; ">
+        <img id="bramp" src="" class = "ramp" style="position:absolute; left:590px; top:240px; ">
+
+        <!--점수 표시-->
+        <img id="num0" src="" class = "num" style="position:absolute; left:1150px; top:560px; ">
+        <img id="num1" src="" class = "num" style="position:absolute; left:1150px; top:560px; ">
+        <img id="num2" src="" class = "num" style="position:absolute; left:1150px; top:560px; ">
+        <img id="num3" src="" class = "num" style="position:absolute; left:1150px; top:560px; ">
+        <img id="ynum0" src="" class = "num" style="position:absolute; left:1150px; top:240px; ">
+        <img id="ynum1" src="" class = "num" style="position:absolute; left:1150px; top:240px; ">
+        <img id="ynum2" src="" class = "num" style="position:absolute; left:1150px; top:240px; ">
+        <img id="ynum3" src="" class = "num" style="position:absolute; left:1150px; top:240px; ">
+        <img id="result1" src="" class = "result" style="position:absolute; left:570px; top:100px; ">
+        <img id="result2" src="" class = "result" style="position:absolute; left:570px; top:100px; ">
+        <img id="result3" src="" class = "result" style="position:absolute; left:570px; top:100px; ">
+        <script src="js/1.js"></script>
+    </body>
+    </html> 
