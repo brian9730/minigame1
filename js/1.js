@@ -33,7 +33,7 @@ function Restart(){
     //모든 이미지 삭제
     alldel();
     //다시 시작 버튼 클릭 시 처음 화면으로 이동
-    location.href='01.html';
+    location.href='index.html';
 }
 
 //각 카드를 화면에 표시하고 애니메이션을 주기 위한 함수들
